@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Converter</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <textarea required  placeholder="Enter something to save"></textarea>
+      <div class="file-options">
+        <div class="option file-name">
+          <label>File Name</label>
+          <input type="text" placeholder="Enter file name" />
+        </div>
+        <div class="option save-as">
+            <label >Save as</label>
+            <div class="select-menu">
+                <select >
+                    <option value="text/plain">Text Documents (*.txt)</option>
+                    <option value="text/javascript">Text Documents (*.js)</option>
+                    <option value="text/html">Text Documents (*.html)</option>
+                    <option value="image/svg+xml">Text Documents (*.svg)</option>
+                    <option value="application/msword">Text Documents (*.doc)</option>
+                    <option value="application/vnd.ms-powerpoint">Text Documents (*.ppt)</option>
+                </select>
+            </div>
+        </div>
+      </div>
+      <button class="save-btn">Save As Text File</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

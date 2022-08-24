@@ -1,0 +1,78 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif; 
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: steelblue;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(0,0,0,0.4);
+    width: 450px;
+    border-radius: 10px;
+    padding: 30px 25px 40px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,1);
+}
+
+.container :where(textarea, input, select,button){
+    width: 100%;
+    background-color: lightblue;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,1);
+    outline: none;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.container textarea{
+    height: 300px;
+    resize: none;
+    padding: 10px 15px;
+}
+
+.container .file-options{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.file-options .option{
+    width: calc(100% / 2 - 8px)
+}
+
+.option :where(input, select){
+    height: 50px;
+    padding:15px;
+    margin-top: 6px;
+    border-radius: 5px;
+}
+
+.container .save-btn {
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+    background: #17a;
+    padding: 15px 0;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+
+.container textarea:valid ~ .save-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container .save-btn:hover{
+    transform: scale(1.01);
+    background: steelblue;
+}
